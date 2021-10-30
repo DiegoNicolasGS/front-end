@@ -1,0 +1,84 @@
+body {background-color : #ededed; font-family : "Open Sans", sans-serif;}
+
+h1.diego {
+    padding: 40px; 
+    text-align: center; 
+    font-size: 3em;
+    font-variant : small-caps;
+}
+
+h2.nicolas {
+  padding: 40px; 
+  text-align: center; 
+  font-size: 2.5em;
+  font-variant : small-caps;
+}
+
+li a {text-decoration : none; color : #2d2f31;}
+
+
+nav {
+  width : 400px; 
+  background: #d9d9d9;
+  margin : 0px auto; 
+}
+
+span {
+  padding : 30px;
+  background : #2d2f31; 
+  color : white;
+  font-size : 1.2em;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+header {
+    padding : 10px;
+    background : #2d2f31; 
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    display: block;
+}
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .3s ease;
+}
+
+.slide li {padding : 12px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
+
+input, textarea, select, button {
+  width : 230px;
+  margin: 0;
+
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;       
+}
+
+.footer{
+  background : #2d2f31; 
+  color : white;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+button.lu{
+  width: 500px;
+}

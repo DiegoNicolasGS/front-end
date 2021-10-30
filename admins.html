@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scriptad.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <title>Admins</title>
+</head>
+<body>
+    <!-- Nombre -->
+    <h1 class="diego">Admins</h1>
+
+    <!-- Tabla 1 -->
+    <h2 class="nicolas">Admin</h2>
+
+    <div style="text-align: center;">
+        <input type="text" id="Aname" placeholder="Name" maxlength="45">
+        <input type="password" id="Apassword" placeholder="Password" maxlength="250">
+        <input type="email" id="Aemail" placeholder="Email" maxlength="45">
+        <br>
+        <br>
+        <button onclick="guardarInformacionAdmin()">Save Admin</button>
+    </div>
+
+    <br>
+    <div id="resultado1"></div>
+
+    <script type="text/javascript"> 
+    window.onload = autoInicioAdmin();
+    </script>  
+
+    <br>
+    <br>
+
+    <!-- Tabla 2 -->
+    <h2 class="nicolas">Score</h2>
+    
+    <div style="text-align: center;">
+        <input type="text" id="Stext" placeholder="Text" maxlength="250">
+        <input type="number" id="Sstars" placeholder="Stars" max="5">
+        <input type="date" id="Sdate" placeholder="Date">
+        <br>
+        <br>
+        <button onclick="guardarInformacionScore()">Save Score</button>
+    </div>
+
+    <br>
+    <div id="resultado2"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioScore();
+    </script>
+    <footer class="footer">
+        <div class="copyright py-4 text-center container-fluid">
+            <small>Copyright &copy; Grupo 3 MinTic 2021-2022</small>
+            <a href="index.html">
+                <input type="button" value="Home"style="float: right;">
+            </a>                       
+        </div> 
+    </footer>
+</body>
+</html>
